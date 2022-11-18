@@ -1,0 +1,28 @@
+# 30_15_ohne
+
+#b1
+Parameter   Wert    Fehler
+Amplitude
+\mu
+\sigma
+\gamma
+FWHM        0.036   0.005
+Height      7.6e+04 0.9e+04
+red\chi^2
+
+
+#a1
+Parameter   Wert    Fehler
+Amplitude1
+Amplitude2
+\mu1
+\mu2
+\sigma1
+\sigma2
+\gamma1
+\gamma2
+FWHM1
+FWHM2
+Height1
+Height2 
+red\chi^2
