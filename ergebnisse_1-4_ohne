@@ -13,16 +13,16 @@ red\chi^2
 
 #a1
 Parameter   Wert    Fehler
-Amplitude1
-Amplitude2
-\mu1
-\mu2
-\sigma1
-\sigma2
-\gamma1
-\gamma2
-FWHM1
-FWHM2
-Height1
-Height2 
-red\chi^2
+Amplitude1  
+Amplitude2  
+\mu1        
+\mu2        
+\sigma1     
+\sigma2     
+\gamma1     
+\gamma2     
+FWHM1       
+FWHM2       
+Height1     
+Height2     
+red\chi^2   
