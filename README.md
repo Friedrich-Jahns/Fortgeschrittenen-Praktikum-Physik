@@ -1,2 +1,2 @@
-# Fortgeschrittenen-Praktikum-Physik-BA
+# Fortgeschrittenen-Praktikum-Physik
 
