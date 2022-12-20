@@ -5,18 +5,11 @@ import matplotlib.pyplot as plt
 
 class gaus_fit:
     def __init__(self,pressure,type,fit_plot,fitreport,out):
-        self.type = pressure
+        self.pressure = pressure
         self.type = type
         self.fit_plot = fit_plot
         self.fitreport = fitreport
         self.out = out
-
-
-
-
-
-
-
 
 
 
@@ -29,7 +22,7 @@ def pos(x,dat):
 
 
 
-def gaus1fit(dat,von,bis,path,m=1,mmin=0,mmax=2,s=0.2,smax=1000,scale=1e-9,override=False): 
+def gaus1fit(dat,von,bis,m=1,mmin=0,mmax=2,s=0.2,smax=1000,scale=1e-9,override=False): 
     data=np.array(dat[1:4])
     vonarr = pos(von,data)
     bisarr = pos(bis,data)
@@ -53,13 +46,14 @@ def gaus1fit(dat,von,bis,path,m=1,mmin=0,mmax=2,s=0.2,smax=1000,scale=1e-9,overr
     print(out_gaus.fit_report())
     plt.xlabel('Channel')
     plt.ylabel('Counts')
+    plt.show()
 
     return np.array([np.arange(von,bis,0.01),out_gaus.eval(x=np.arange(von,bis,0.01))]), out_gaus.fit_report,out_gaus
 
     
 
 
-def gaus3fit(dat,von,bis,path,m1,m1min,m1max,m2,m2min,m2max,m3,m3min,m3max,s1=0.3,s2=0.3,s3=0.3):
+def gaus3fit(dat,von,bis,m1,m1min,m1max,m2,m2min,m2max,m3,m3min,m3max,s1=0.3,s2=0.3,s3=0.3):
     data=np.array(dat[1:4])
     vonarr = pos(von,data)
     bisarr = pos(bis,data)
@@ -91,6 +85,7 @@ def gaus3fit(dat,von,bis,path,m1,m1min,m1max,m2,m2min,m2max,m3,m3min,m3max,s1=0.
     print(out_gaus.fit_report())
     plt.xlabel('Channel')
     plt.ylabel('Counts')
+    plt.show()
 
     return np.array([np.arange(von,bis,0.01),out_gaus.eval(x=np.arange(von,bis,0.01))]), out_gaus.fit_report , out_gaus
 
@@ -99,20 +94,47 @@ def gaus3fit(dat,von,bis,path,m1,m1min,m1max,m2,m2min,m2max,m3,m3min,m3max,s1=0.
 
 def gausfit_table(fit):
     if fit.type == 3:
-        return (r"%" + str(fit.pressure) + "\n"
+        return ("\n\n\n"
+                r"%" + str(fit.pressure) + "\n\n"
+                r"\begin{figure}[ht]" + "\n"
+                r"\centering" + "\n"
+                r"\caption[]{\centering}" + "\n"
+                r"\includegraphics[width=\textwidth]{}" + "\n"
+                r"\label{fig:my_label}" + "\n"
+                r"\end{figure}" + "\n"
+                "\n\n\n"
                 r"\begin{table}[ht]" + "\n"
                 r"\begin{tabular}{l|l}" + "\n"
                 r"Parameter    & Value \\ \hline" + "\n"
-                r"g1_amplitude &" + str(fit.out.params["g1_amplitude"].value) + r"\pm" + str(fit.out.params["g1_amplitude"].stderr) +  r"\\" + "\n"
-                r"g1_center    &" + str(fit.out.params["g1_center"].value) + r"\pm" + str(fit.out.params["g1_center"].stderr) +  r"\\" + "\n"
-                r"g1_sigma     &" + str(fit.out.params["g1_sigma"].value) + r"\pm" + str(fit.out.params["g1_sigma"].stderr) +  r"\\" + "\n"
-                r"g2_amplitude &" + str(fit.out.params["g2_amplitude"].value) + r"\pm" + str(fit.out.params["g2_amplitude"].stderr) +  r"\\" + "\n"
-                r"g2_center    &" + str(fit.out.params["g2_center"].value) + r"\pm" + str(fit.out.params["g2_center"].stderr) +  r"\\" + "\n"
-                r"g2_sigma     &" + str(fit.out.params["g2_sigma"].value) + r"\pm" + str(fit.out.params["g2_sigma"].stderr) +  r"\\" + "\n"
-                r"g3_amplitude &" + str(fit.out.params["g3_amplitude"].value) + r"\pm" + str(fit.out.params["g3_amplitude"].stderr) +  r"\\" + "\n"
-                r"g3_center    &" + str(fit.out.params["g3_center"].value) + r"\pm" + str(fit.out.params["g3_center"].stderr) +  r"\\" + "\n"
-                r"g3_sigma     &" + str(fit.out.params["g3_sigma"].value) + r"\pm" + str(fit.out.params["g3_sigma"].stderr) +  r"\\" + "\n"
+                r"g1_amplitude &" + str(fit.out.params["g1_amplitude"].value) + r"$\pm$" + str(fit.out.params["g1_amplitude"].stderr) +  r"\\" + "\n"
+                r"g1_center    &" + str(fit.out.params["g1_center"].value) + r"$\pm$" + str(fit.out.params["g1_center"].stderr) +  r"\\" + "\n"
+                r"g1_sigma     &" + str(fit.out.params["g1_sigma"].value) + r"$\pm$" + str(fit.out.params["g1_sigma"].stderr) +  r"\\" + "\n"
+                r"g2_amplitude &" + str(fit.out.params["g2_amplitude"].value) + r"$\pm$" + str(fit.out.params["g2_amplitude"].stderr) +  r"\\" + "\n"
+                r"g2_center    &" + str(fit.out.params["g2_center"].value) + r"$\pm$" + str(fit.out.params["g2_center"].stderr) +  r"\\" + "\n"
+                r"g2_sigma     &" + str(fit.out.params["g2_sigma"].value) + r"$\pm$" + str(fit.out.params["g2_sigma"].stderr) +  r"\\" + "\n"
+                r"g3_amplitude &" + str(fit.out.params["g3_amplitude"].value) + r"$\pm$" + str(fit.out.params["g3_amplitude"].stderr) +  r"\\" + "\n"
+                r"g3_center    &" + str(fit.out.params["g3_center"].value) + r"$\pm$" + str(fit.out.params["g3_center"].stderr) +  r"\\" + "\n"
+                r"g3_sigma     &" + str(fit.out.params["g3_sigma"].value) + r"$\pm$" + str(fit.out.params["g3_sigma"].stderr) +  r"\\" + "\n"
                 r"red\chi^2    &" + str(fit.out.redchi) + "\n"
                 r"\end{tabular}" + "\n"
-                r"\end{table}" + "\n")
+                r"\end{table}" + "\n\n")
 
+    if fit.type == 1:
+        return ("\n\n\n"
+                r"%" + str(fit.pressure) + "\n\n"
+                r"\begin{figure}[ht]" + "\n"
+                r"\centering" + "\n"
+                r"\caption[]{\centering}" + "\n"
+                r"\includegraphics[width=\textwidth]{}" + "\n"
+                r"\label{fig:my_label}" + "\n"
+                r"\end{figure}" + "\n"
+                "\n\n\n"
+                r"\begin{table}[ht]" + "\n"
+                r"\begin{tabular}{l|l}" + "\n"
+                r"Parameter    & Value \\ \hline" + "\n"
+                r"amplitude &" + str(fit.out.params["amplitude"].value) + r"$\pm$" + str(fit.out.params["amplitude"].stderr) +  r"\\" + "\n"
+                r"center    &" + str(fit.out.params["center"].value) + r"$\pm$" + str(fit.out.params["center"].stderr) +  r"\\" + "\n"
+                r"sigma     &" + str(fit.out.params["sigma"].value) + r"$\pm$" + str(fit.out.params["sigma"].stderr) +  r"\\" + "\n"
+                r"red\chi^2    &" + str(fit.out.redchi) + "\n"
+                r"\end{tabular}" + "\n"
+                r"\end{table}" + "\n\n")
