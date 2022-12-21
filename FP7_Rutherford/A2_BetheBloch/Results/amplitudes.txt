@@ -1,0 +1,2 @@
+pressure	g1_amplitude	g1_amplitudeerr	g2_amplitude	g2_amplitudeerr	g3_amplitude	g3_amplitudeerr	g4_amplitude	g4_amplitudeerr
+125	20322.893880074647	416.03353859582336	21643.414035085516	510.6775320435606	13081.84438859161	210.36478079729827	none	none

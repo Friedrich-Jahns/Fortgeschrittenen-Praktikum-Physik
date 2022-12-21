@@ -1,1 +1,0 @@
-pressure	g1_height	g1_heighterr	g2_height	g2_heighterr	g3_height	g3_heighterr	g4_height	g4_heighterr
