@@ -1,0 +1,52 @@
+set xrange [2:]
+plot '100_Torr.csv' using 1:2 title '100_Torr' with steps
+pause -1
+
+plot '125_Torr.csv' using 1:2 title '125_Torr' with steps
+pause -1
+
+plot '150_Torr.csv' using 1:2 title '150_Torr' with steps
+pause -1
+
+plot '175_Torr.csv' using 1:2 title '175_Torr' with steps
+pause -1
+
+plot '200_Torr.csv' using 1:2 title '200_Torr' with steps
+pause -1
+
+plot '225_Torr.csv' using 1:2 title '225_Torr' with steps
+pause -1
+
+plot '250_Torr.csv' using 1:2 title '250_Torr' with steps
+pause -1
+
+plot '275_Torr.csv' using 1:2 title '275_Torr' with steps
+pause -1
+
+plot '300_Torr.csv' using 1:2 title '300_Torr' with steps
+pause -1
+
+plot '325_Torr.csv' using 1:2 title '325_Torr' with steps
+pause -1
+
+plot '350_Torr.csv' using 1:2 title '350_Torr' with steps
+pause -1
+
+plot '375_Torr.csv' using 1:2 title '375_Torr' with steps
+pause -1
+
+plot '400_Torr.csv' using 1:2 title '400_Torr' with steps
+pause -1
+
+plot '425_Torr.csv' using 1:2 title '425_Torr' with steps
+pause -1
+
+plot '450_Torr.csv' using 1:2 title '450_Torr' with steps
+pause -1
+
+plot '55Torr.csv' using 1:2 title '55Torr' with steps
+pause -1
+
+plot '75_Torr.csv' using 1:2 title '75_Torr' with steps
+pause -1
+
