@@ -15,16 +15,46 @@
 \begin{table}[ht]
 \begin{tabular}{l|l}
 Parameter    & Value \\ \hline
-g1_amplitude &23904.959438048125$\pm$546.6047880130789\\
-g1_center    &1043.9283601598208$\pm$1.3198777262526031\\
-g1_sigma     &57.051328086141986$\pm$1.0107512856595355\\
-g2_amplitude &5.066676201228477$\pm$36.449518974468184\\
-g2_center    &1276.3556495736545$\pm$150.87579688030684\\
-g2_sigma     &18.154116952222566$\pm$152.9235619992948\\
-g3_amplitude &22.12609515071694$\pm$98.80304364770717\\
-g3_center    &1648.1522407785915$\pm$729.3752865116752\\
-g3_sigma     &142.7939015499212$\pm$749.0497030205285\\
-red\chi^2    &12.484923819318233
+g1_amplitude &31584.995469651432$\pm$None\\
+g1_center    &192.60734934158933$\pm$None\\
+g1_sigma     &66.66676433338408$\pm$None\\
+g2_amplitude &37389.19072075527$\pm$None\\
+g2_center    &349.9999859639266$\pm$None\\
+g2_sigma     &49.74893355437115$\pm$None\\
+g3_amplitude &28866.059893463906$\pm$None\\
+g3_center    &509.37850703563777$\pm$None\\
+g3_sigma     &64.05514634771407$\pm$None\\
+red\chi^2    &13.636143358853433
+\end{tabular}
+\end{table}
+
+
+
+
+%55Torr
+
+\begin{figure}[ht]
+\centering
+\caption[]{\centering}
+\includegraphics[width=\textwidth]{}
+\label{fig:my_label}
+\end{figure}
+
+
+
+\begin{table}[ht]
+\begin{tabular}{l|l}
+Parameter    & Value \\ \hline
+g1_amplitude &31584.995469651432$\pm$None\\
+g1_center    &192.60734934158933$\pm$None\\
+g1_sigma     &66.66676433338408$\pm$None\\
+g2_amplitude &37389.19072075527$\pm$None\\
+g2_center    &349.9999859639266$\pm$None\\
+g2_sigma     &49.74893355437115$\pm$None\\
+g3_amplitude &28866.059893463906$\pm$None\\
+g3_center    &509.37850703563777$\pm$None\\
+g3_sigma     &64.05514634771407$\pm$None\\
+red\chi^2    &13.636143358853433
 \end{tabular}
 \end{table}
 
