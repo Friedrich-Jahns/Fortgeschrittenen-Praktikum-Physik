@@ -1,7 +1,7 @@
 import numpy as np
 import lmfit
 import matplotlib.pyplot as plt
-
+from scipy import special
 
 class gaus_fit:
     def __init__(self,pressure,type,fit_plot,fitreport,out):
@@ -149,3 +149,16 @@ def linear_fit(data,x,err):
     pars_lin = model_lin.guess(data=data,x=x)
     out_lin =  model_lin.fit(data,x=x,params=pars_lin,nan_policy='propagate',weights=1/np.array(err))
     return out_lin
+
+def erfc(x,A,B,C):
+    return A*special.erfc(B*x-C)
+
+def erfc_fit(data,x,err):
+    model_erfc = lmfit.Model(erfc)
+    erfc_params = model_erfc.make_params()
+    erfc_params["A"].set(25.907)
+    erfc_params["B"].set(7.829)
+    erfc_params["C"].set(17.657)
+
+    return model_erfc.fit(data,x=x,params=erfc_params,nan_policy='propagate',weights=1/np.array(err))
+    
