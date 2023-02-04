@@ -2,6 +2,7 @@ import numpy as np
 import lmfit
 import matplotlib.pyplot as plt
 from scipy import special
+from uncertainties import wrap
 
 class gaus_fit:
     def __init__(self,pressure,type,fit_plot,fitreport,out):
@@ -44,9 +45,9 @@ def gaus1fit(dat,von,bis,m=1,mmin=0,mmax=2,s=0.2,smax=1000,scale=1e-9,override=F
     plt.grid()
     plt.legend()
     print(out_gaus.fit_report())
-    plt.xlabel('Channel')
-    plt.ylabel('Counts')
-    plt.show()
+    plt.xlabel('Channel',fontsize=20)
+    plt.ylabel('Counts',fontsize=20)
+    
 
     return np.array([np.arange(von,bis,0.01),out_gaus.eval(x=np.arange(von,bis,0.01))]), out_gaus.fit_report,out_gaus
 
@@ -83,9 +84,9 @@ def gaus3fit(dat,von,bis,m1,m1min,m1max,m2,m2min,m2max,m3,m3min,m3max,s1=0.3,s2=
     plt.grid()
     plt.legend()
     print(out_gaus.fit_report())
-    plt.xlabel('Channel')
-    plt.ylabel('Counts')
-    plt.show()
+    plt.xlabel('Channel',fontsize=20)
+    plt.ylabel('Counts',fontsize=20)
+    
 
     return np.array([np.arange(von,bis,0.01),out_gaus.eval(x=np.arange(von,bis,0.01))]), out_gaus.fit_report , out_gaus
 
@@ -161,4 +162,15 @@ def erfc_fit(data,x,err):
     erfc_params["C"].set(17.657)
 
     return model_erfc.fit(data,x=x,params=erfc_params,nan_policy='propagate',weights=1/np.array(err))
+
+
+def dEdx(data,x):
+    diff,dist = [],[]
+    for i in range(len(data)-1):
+        diff.append((data[i]-data[i+1])/(x[i+1]-x[i]))
+        dist.append(x[i]+(x[i+1]-x[i])/2)
+    return dist,diff
     
+def wrappeddiff(data,x):
+    func = wrap(dEdx)
+    return func(data,x)

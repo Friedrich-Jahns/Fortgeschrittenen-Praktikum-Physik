@@ -1,6 +1,60 @@
 
 
 
+%055_Torr
+
+\begin{figure}[ht]
+\centering
+\caption[]{\centering}
+\includegraphics[width=\textwidth]{}
+\label{fig:my_label}
+\end{figure}
+
+
+
+\begin{table}[ht]
+\begin{tabular}{l|l}
+Parameter    & Value \\ \hline
+g1_amplitude &36609.76308651532$\pm$758.4562922794735\\
+g1_center    &206.17244763412467$\pm$2.0611044035417314\\
+g1_sigma     &76.1966732092284$\pm$1.32126642507289\\
+g2_amplitude &35732.94664425696$\pm$988.4148881720976\\
+g2_center    &364.0803989194657$\pm$0.9370831268088876\\
+g2_sigma     &48.37438537879162$\pm$1.0658926684321994\\
+g3_amplitude &25973.63914044331$\pm$457.0009646074555\\
+g3_center    &519.5593755618139$\pm$1.36523108684922\\
+g3_sigma     &57.450681889400805$\pm$0.8463131283670606\\
+red\chi^2    &1.9034937328336166
+\end{tabular}
+\end{table}
+
+
+
+
+%055_Torr
+
+\begin{figure}[ht]
+\centering
+\caption[]{\centering}
+\includegraphics[width=\textwidth]{}
+\label{fig:my_label}
+\end{figure}
+
+
+
+\begin{table}[ht]
+\begin{tabular}{l|l}
+Parameter    & Value \\ \hline
+amplitude &23905.451325644135$\pm$249.16721026431134\\
+center    &1043.9295516236498$\pm$0.6013677049016665\\
+sigma     &57.059811717651684$\pm$0.45793816028243156\\
+red\chi^2    &2.594929178377027
+\end{tabular}
+\end{table}
+
+
+
+
 %100_Torr
 
 \begin{figure}[ht]
@@ -241,60 +295,6 @@ amplitude &23164.453325639046$\pm$184.3308557636703\\
 center    &76.19901129171528$\pm$0.4781675063646109\\
 sigma     &49.391767135782956$\pm$0.3792357077795216\\
 red\chi^2    &1.2554799410310962
-\end{tabular}
-\end{table}
-
-
-
-
-%055_Torr
-
-\begin{figure}[ht]
-\centering
-\caption[]{\centering}
-\includegraphics[width=\textwidth]{}
-\label{fig:my_label}
-\end{figure}
-
-
-
-\begin{table}[ht]
-\begin{tabular}{l|l}
-Parameter    & Value \\ \hline
-g1_amplitude &36609.76308651532$\pm$758.4562922794735\\
-g1_center    &206.17244763412467$\pm$2.0611044035417314\\
-g1_sigma     &76.1966732092284$\pm$1.32126642507289\\
-g2_amplitude &35732.94664425696$\pm$988.4148881720976\\
-g2_center    &364.0803989194657$\pm$0.9370831268088876\\
-g2_sigma     &48.37438537879162$\pm$1.0658926684321994\\
-g3_amplitude &25973.63914044331$\pm$457.0009646074555\\
-g3_center    &519.5593755618139$\pm$1.36523108684922\\
-g3_sigma     &57.450681889400805$\pm$0.8463131283670606\\
-red\chi^2    &1.9034937328336166
-\end{tabular}
-\end{table}
-
-
-
-
-%055_Torr
-
-\begin{figure}[ht]
-\centering
-\caption[]{\centering}
-\includegraphics[width=\textwidth]{}
-\label{fig:my_label}
-\end{figure}
-
-
-
-\begin{table}[ht]
-\begin{tabular}{l|l}
-Parameter    & Value \\ \hline
-amplitude &23905.451325644135$\pm$249.16721026431134\\
-center    &1043.9295516236498$\pm$0.6013677049016665\\
-sigma     &57.059811717651684$\pm$0.45793816028243156\\
-red\chi^2    &2.594929178377027
 \end{tabular}
 \end{table}
 
