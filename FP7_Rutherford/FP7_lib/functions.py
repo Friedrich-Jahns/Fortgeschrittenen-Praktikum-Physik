@@ -43,7 +43,7 @@ def gaus1fit(dat,von,bis,m=1,mmin=0,mmax=2,s=0.2,smax=1000,scale=1e-9,override=F
     plt.plot(np.arange(von,bis,0.01),out_gaus.eval(x=np.arange(von,bis,0.01)),zorder=10,color='k',linestyle='-',alpha=1,label="Gaus-Fit")
     
     plt.grid()
-    plt.legend()
+    plt.legend(fontsize = 15)
     print(out_gaus.fit_report())
     plt.xlabel('Channel',fontsize=20)
     plt.ylabel('Counts',fontsize=20)
@@ -82,7 +82,7 @@ def gaus3fit(dat,von,bis,m1,m1min,m1max,m2,m2min,m2max,m3,m3min,m3max,s1=0.3,s2=
     plt.plot(np.arange(von,bis,0.01),out_gaus.eval(x=np.arange(von,bis,0.01)),zorder=10,color='k',linestyle='-',alpha=1,label="Gaus-Fit")
 
     plt.grid()
-    plt.legend()
+    plt.legend(fontsize = 15)
     print(out_gaus.fit_report())
     plt.xlabel('Channel',fontsize=20)
     plt.ylabel('Counts',fontsize=20)
