@@ -105,6 +105,7 @@ def gausfit_table(fit):
                 r"\end{figure}" + "\n"
                 "\n\n\n"
                 r"\begin{table}[ht]" + "\n"
+                r"\centering" + "\n"
                 r"\begin{tabular}{l|l}" + "\n"
                 r"Parameter    & Value \\ \hline" + "\n"
                 r"g1_amplitude &" + str(fit.out.params["g1_amplitude"].value) + r"$\pm$" + str(fit.out.params["g1_amplitude"].stderr) +  r"\\" + "\n"
@@ -118,7 +119,9 @@ def gausfit_table(fit):
                 r"g3_sigma     &" + str(fit.out.params["g3_sigma"].value) + r"$\pm$" + str(fit.out.params["g3_sigma"].stderr) +  r"\\" + "\n"
                 r"red\chi^2    &" + str(fit.out.redchi) + "\n"
                 r"\end{tabular}" + "\n"
-                r"\end{table}" + "\n\n")
+                r"\end{table}" + "\n\n"
+                r"\FloatBarrier" + "\n"
+                r"\clearpage" + "\n\n")
 
     if fit.type == 1:
         return ("\n\n\n"
@@ -131,6 +134,7 @@ def gausfit_table(fit):
                 r"\end{figure}" + "\n"
                 "\n\n\n"
                 r"\begin{table}[ht]" + "\n"
+                r"\centering" + "\n"
                 r"\begin{tabular}{l|l}" + "\n"
                 r"Parameter    & Value \\ \hline" + "\n"
                 r"amplitude &" + str(fit.out.params["amplitude"].value) + r"$\pm$" + str(fit.out.params["amplitude"].stderr) +  r"\\" + "\n"
@@ -138,7 +142,9 @@ def gausfit_table(fit):
                 r"sigma     &" + str(fit.out.params["sigma"].value) + r"$\pm$" + str(fit.out.params["sigma"].stderr) +  r"\\" + "\n"
                 r"red\chi^2    &" + str(fit.out.redchi) + "\n"
                 r"\end{tabular}" + "\n"
-                r"\end{table}" + "\n\n")
+                r"\end{table}" + "\n\n"
+                r"\FloatBarrier" + "\n"
+                r"\clearpage" + "\n\n")
     
 
 

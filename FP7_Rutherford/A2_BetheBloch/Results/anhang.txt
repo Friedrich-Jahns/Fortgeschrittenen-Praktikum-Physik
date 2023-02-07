@@ -13,6 +13,7 @@
 
 
 \begin{table}[ht]
+\centering
 \begin{tabular}{l|l}
 Parameter    & Value \\ \hline
 g1_amplitude &36609.76308651532$\pm$758.4562922794735\\
@@ -27,6 +28,9 @@ g3_sigma     &57.450681889400805$\pm$0.8463131283670606\\
 red\chi^2    &1.9034937328336166
 \end{tabular}
 \end{table}
+
+\FloatBarrier
+\clearpage
 
 
 
@@ -43,6 +47,7 @@ red\chi^2    &1.9034937328336166
 
 
 \begin{table}[ht]
+\centering
 \begin{tabular}{l|l}
 Parameter    & Value \\ \hline
 amplitude &23905.451325644135$\pm$249.16721026431134\\
@@ -51,6 +56,9 @@ sigma     &57.059811717651684$\pm$0.45793816028243156\\
 red\chi^2    &2.594929178377027
 \end{tabular}
 \end{table}
+
+\FloatBarrier
+\clearpage
 
 
 
@@ -67,6 +75,7 @@ red\chi^2    &2.594929178377027
 
 
 \begin{table}[ht]
+\centering
 \begin{tabular}{l|l}
 Parameter    & Value \\ \hline
 g1_amplitude &28277.90103156329$\pm$959.0259424110287\\
@@ -82,6 +91,9 @@ red\chi^2    &1.243792972444942
 \end{tabular}
 \end{table}
 
+\FloatBarrier
+\clearpage
+
 
 
 
@@ -97,6 +109,7 @@ red\chi^2    &1.243792972444942
 
 
 \begin{table}[ht]
+\centering
 \begin{tabular}{l|l}
 Parameter    & Value \\ \hline
 amplitude &23932.98417850104$\pm$235.76748667118594\\
@@ -106,6 +119,9 @@ red\chi^2    &2.321501750934508
 \end{tabular}
 \end{table}
 
+\FloatBarrier
+\clearpage
+
 
 
 
@@ -121,6 +137,7 @@ red\chi^2    &2.321501750934508
 
 
 \begin{table}[ht]
+\centering
 \begin{tabular}{l|l}
 Parameter    & Value \\ \hline
 amplitude &26376.473640994907$\pm$297.71647590888506\\
@@ -130,6 +147,9 @@ red\chi^2    &1.0219078754743451
 \end{tabular}
 \end{table}
 
+\FloatBarrier
+\clearpage
+
 
 
 
@@ -145,6 +165,7 @@ red\chi^2    &1.0219078754743451
 
 
 \begin{table}[ht]
+\centering
 \begin{tabular}{l|l}
 Parameter    & Value \\ \hline
 amplitude &24003.637619611018$\pm$250.99920787501324\\
@@ -154,6 +175,9 @@ red\chi^2    &2.612069172209201
 \end{tabular}
 \end{table}
 
+\FloatBarrier
+\clearpage
+
 
 
 
@@ -169,6 +193,7 @@ red\chi^2    &2.612069172209201
 
 
 \begin{table}[ht]
+\centering
 \begin{tabular}{l|l}
 Parameter    & Value \\ \hline
 amplitude &28696.57012407838$\pm$283.8835998647989\\
@@ -178,6 +203,9 @@ red\chi^2    &1.6364706430582752
 \end{tabular}
 \end{table}
 
+\FloatBarrier
+\clearpage
+
 
 
 
@@ -193,6 +221,7 @@ red\chi^2    &1.6364706430582752
 
 
 \begin{table}[ht]
+\centering
 \begin{tabular}{l|l}
 Parameter    & Value \\ \hline
 amplitude &23439.99341647274$\pm$267.8112642925633\\
@@ -201,6 +230,9 @@ sigma     &54.041951316420594$\pm$0.4714141825451664\\
 red\chi^2    &3.0583613967596244
 \end{tabular}
 \end{table}
+
+\FloatBarrier
+\clearpage
 
 
 
@@ -217,6 +249,7 @@ red\chi^2    &3.0583613967596244
 
 
 \begin{table}[ht]
+\centering
 \begin{tabular}{l|l}
 Parameter    & Value \\ \hline
 amplitude &23685.692009260165$\pm$248.62103503306662\\
@@ -225,6 +258,9 @@ sigma     &53.1542478996129$\pm$0.4236740368733668\\
 red\chi^2    &2.6073938235048266
 \end{tabular}
 \end{table}
+
+\FloatBarrier
+\clearpage
 
 
 
@@ -241,6 +277,7 @@ red\chi^2    &2.6073938235048266
 
 
 \begin{table}[ht]
+\centering
 \begin{tabular}{l|l}
 Parameter    & Value \\ \hline
 amplitude &23648.8653458125$\pm$251.7576932117185\\
@@ -249,6 +286,9 @@ sigma     &52.87035706921366$\pm$0.4311820232443661\\
 red\chi^2    &2.678453445950074
 \end{tabular}
 \end{table}
+
+\FloatBarrier
+\clearpage
 
 
 
@@ -265,6 +305,7 @@ red\chi^2    &2.678453445950074
 
 
 \begin{table}[ht]
+\centering
 \begin{tabular}{l|l}
 Parameter    & Value \\ \hline
 amplitude &23919.310334208323$\pm$216.69990333102598\\
@@ -273,6 +314,9 @@ sigma     &53.0717589541274$\pm$0.39335784901706644\\
 red\chi^2    &1.951380774282573
 \end{tabular}
 \end{table}
+
+\FloatBarrier
+\clearpage
 
 
 
@@ -289,6 +333,7 @@ red\chi^2    &1.951380774282573
 
 
 \begin{table}[ht]
+\centering
 \begin{tabular}{l|l}
 Parameter    & Value \\ \hline
 amplitude &23164.453325639046$\pm$184.3308557636703\\
@@ -297,4 +342,7 @@ sigma     &49.391767135782956$\pm$0.3792357077795216\\
 red\chi^2    &1.2554799410310962
 \end{tabular}
 \end{table}
+
+\FloatBarrier
+\clearpage
 
