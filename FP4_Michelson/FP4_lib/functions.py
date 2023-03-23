@@ -5,6 +5,15 @@ from uncertainties import ufloat
 import matplotlib.pyplot as plt
 
 
+def pos(data,pos):
+    for i in range(len(data)):
+        if data[i]>=pos:
+            return i
+            break
+        
+
+
+
 
 
 def linfit(data,x,err):
