@@ -12,7 +12,11 @@ def pos(data,pos):
             break
         
 
-
+def gausfit(data,x,err):
+    model_exp = lmfit.models.GaussianModel()
+    pars_exp = model_exp.guess(data=data,x=x)
+    out_exp =  model_exp.fit(data,x=x,params=pars_exp,nan_policy='propagate',weights=1/np.array(err))
+    return out_exp
 
 
 
