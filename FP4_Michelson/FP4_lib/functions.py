@@ -11,6 +11,13 @@ def pos(data,pos):
             return i
             break
         
+def sinfit(data,x,err):
+    model_sin = lmfit.models.SineModel()
+    pars_sin = model_sin.guess(data=data,x=x)
+    out_sin =  model_sin.fit(data,x=x,params=pars_sin,nan_policy='propagate',weights=1/np.array(err))
+    return out_sin
+
+
 
 def gausfit(data,x,err):
     model_exp = lmfit.models.GaussianModel()
