@@ -56,6 +56,7 @@ def figsize(x):
     elif x == 2:
         fig = plt.figure(figsize=(14.4,7.2),dpi=80,linewidth=50)
 
+
 def form(xlim='none',grid=True):
     
     if xlim != 'none':
