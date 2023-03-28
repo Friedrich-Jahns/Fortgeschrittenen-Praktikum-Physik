@@ -57,16 +57,23 @@ def figsize(x):
         fig = plt.figure(figsize=(14.4,7.2),dpi=80,linewidth=50)
 
 
-def form(xlim='none',grid=True):
+def form(xlim='none',grid=True,xlabel='none',ylabel='none',name='none'):
     
     if xlim != 'none':
         plt.xlim(xlim[0],xlim[1])
 
 
     plt.legend(fontsize=20)
-    plt.xlabel('Test',fontsize=20)
-    plt.ylabel('Test',fontsize=20)
+    if xlabel == 0 :
+        plt.xlabel('Test',fontsize=20)
+        plt.ylabel('Test',fontsize=20)
+    else:
+        plt.xlabel(xlabel,fontsize=20)
+        plt.ylabel(ylabel,fontsize=20)
+
     if grid:
         plt.grid(linestyle=':')
 
+    if name != 'none':
+        plt.savefig(name)
     plt.show()
