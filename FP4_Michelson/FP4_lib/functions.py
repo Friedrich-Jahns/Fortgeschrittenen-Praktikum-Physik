@@ -3,6 +3,7 @@ import numpy as np
 from uncertainties import unumpy as up
 from uncertainties import ufloat
 import matplotlib.pyplot as plt
+import pathlib
 
 
 def pos(data,pos):
@@ -76,4 +77,5 @@ def form(xlim='none',grid=True,xlabel='none',ylabel='none',name='none'):
 
     if name != 'none':
         plt.savefig(name)
+        plt.savefig(f'{pathlib.Path(__file__).absolute().parent.parent}/FP4_lib/plots/{name.split("/")[-1]}')
     plt.show()
