@@ -1,7 +1,6 @@
 # Fortgeschrittenen-Praktikum-Physik
 
-
-Dieses Repository enthält den Code, den ich im Rahmen meiner Laborpraktika entwickelt habe.  
+Dieses Repository enthält den Code, den wir im Rahmen unserer Laborpraktika entwickelt haben.  
 
 ## Beschreibung  
 Der Code dient zur Analyse und Auswertung experimenteller Daten aus den Praktikumsversuchen. Er umfasst:  
